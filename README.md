@@ -41,7 +41,7 @@ p.sr(0x10000000, 0x41414141);
 
 const objAddr = p.ne({a:1, b:2});
 console.log("Object address:", objAddr.toString(16));
-```
 const str = p.lr({toString: () => "hello from memory"}, 100);
 console.log("Leaked string:", str);
 `
+```
