@@ -5,7 +5,7 @@
  * Consolidated, self-contained implementation of a JSC memory access primitive
  * inspired by various WebKit exploit techniques (circa 2023–2025 era).
  * 
- * Combines:
+ * Combines
  * - NaN-boxing / structure ID confusion to leak structure IDs and compute NaN offset correction
  * - Fake object injection via butterfly transplantation
  * - Dual WebAssembly instance trick to corrupt global storage pointers for arb r/w without array bounds
@@ -17,8 +17,10 @@
  * 
  * @see README section below for full usage, notes, legal warning, credits
  * 
- * @author SleepTheGod (@portknock)
+ * @author SleepTheGod (TsGh.org / Pl0x.org)
  * @version 2026-03-05
+ * Credits for the logic to https://github.com/rationalpsyche/Talks/
+ * Credits for the exploit code that I updated to Ac1db1tch3z
  */
 
 /*
